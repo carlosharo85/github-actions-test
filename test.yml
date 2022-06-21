@@ -1,0 +1,29 @@
+name: Ali
+age: 28
+address: General Anaya
+active: true
+key:
+    key: value
+    key2: 33
+    key3:
+        key: value
+        key2: value
+jsonObject: { key: value, key2: 33, key3: { key: value, key2: value } }
+array:
+    - item1
+    - item2
+    - { key: value }
+jsonArray: [item1, item2]
+objectsArray:
+    - key: value
+      key2: value2
+    - key: value
+      key2: value2
+longText: >
+    Duis nibh elit, convallis eget urna eget, rhoncus interdum ante. Integer a purus id 
+    ante pellentesque fringilla. Aliquam molestie pellentesque sapien, at convallis arcu 
+    rutrum sed. Orci varius natoque penatibus et magnis dis parturient montes, nascetur 
+    ridiculus mus. Nullam quis volutpat lorem. Nulla lorem quam, dictum at nisl ac, 
+    aliquet ultrices velit. Duis sodales viverra lacinia. Maecenas venenatis orci 
+    tortor, vitae pharetra purus sollicitudin a. Ut maximus vestibulum dolor sit amet 
+    sollicitudin. Sed pellentesque eu nunc non fringilla.
