@@ -1,6 +1,40 @@
 name: Actions Workflow
 
-on: [push, pull_request]
+
+# Despachador de eventos desde un url externa o desde postman
+#on:
+#    repository_dispatch:
+#        type: [build]
+
+
+# Agendar los eventos por cron
+#on:
+#    schedule:
+#        - cron: "0/5 * * * *"
+
+
+on:
+    push:
+        branches:
+            - master
+            - 'feature/*' #matches feature/featA, feature/featb, doesn't match feature/feat/feat/a
+            - 'featcure/**' #matches include all and feature/feat/a
+            - '!feature/featC' #ignore this branch
+
+        #branches-ignore:
+        #    - development
+
+        tags:
+            - v1.*
+
+        #paths:
+        #    - '**.js'
+        paths-ignore:
+          - 'docs/**'
+
+
+
+#on: [push, pull_request]
 
 jobs:
     run-github-actions:
