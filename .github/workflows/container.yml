@@ -4,6 +4,7 @@ on: push
 jobs:
     docker-steps:
         runs-on: ubuntu-latest
+        environment: develop
         container:
             image: node:10.18.0-jessie
         steps:
